@@ -6,6 +6,14 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+app.get("/love",(req,res)=>{
+    res.send("<h1>${date()}<h1>");
+
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+
+
